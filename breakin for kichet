@@ -1,0 +1,285 @@
+local whitelisted = {}
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PiracyParty/why-not/main/GUI.lua"))();
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local lp = Players.LocalPlayer
+local Android = library:CreateSection("vật phẩm");
+local remotes = ReplicatedStorage:WaitForChild("RemoteEvents")
+
+Android:Button("vũ khí",function()
+remotes:WaitForChild("BasementWeapon"):FireServer(false)
+end)
+
+Android:Button("cứu thương",function()
+remotes:WaitForChild("GiveTool"):FireServer("MedKit")
+end)
+
+Android:Button("kiếm thánh",function()
+remotes:WaitForChild("GiveTool"):FireServer("LinkedSword")
+end)
+
+Android:Button("gấu chó",function()
+remotes:WaitForChild("GiveTool"):FireServer("TeddyBloxpin")
+end)
+
+Android:Button("gậy phang nhau",function()
+remotes:WaitForChild("GiveTool"):FireServer("Bat")
+end)
+
+Android:Button("chìa khóa tầng hầm",function()
+remotes:WaitForChild("GiveTool"):FireServer("Key")
+end)
+
+Android:Button("snack thơm ngon",function()
+remotes:WaitForChild("GiveTool"):FireServer("Chips")
+end)
+
+Android:Button("bánh quy",function()
+remotes:WaitForChild("GiveTool"):FireServer("Cookie")
+end)
+
+Android:Button("lát bánh",function()
+remotes:WaitForChild("GiveTool"):FireServer("Pie")
+end)
+
+Android:Button("cocacola",function()
+remotes:WaitForChild("GiveTool"):FireServer("BloxyCola")
+end)
+
+Android:Button("Bad apple",function()
+remotes:WaitForChild("GiveTool"):FireServer("Apple")
+end)
+
+Android:Button("kẹo mút",function()
+remotes:WaitForChild("GiveTool"):FireServer("Lollipop")
+end)
+
+Android:Button("bình thuốc thần",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Cure")
+end)
+
+Android:Button("pizza siêu bé",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Pizza1")
+end)
+
+Android:Button("pizza",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Pizza2")
+end)
+
+Android:Button("pizza bà tân ",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Pizza3")
+end)
+
+Android:Button("pizza nhiễm phóng xạ",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("EpicPizza")
+end)
+
+Android:Button("tấm gỗ",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Plank")
+end)
+
+Android:Button("gói coca",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BloxyPack"):FireServer(1)
+end)
+
+Android:Button("kẹo mút",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Lollipop")
+end)
+
+local Android = library:CreateSection("bật nhạc ");
+
+Android:Button("sit ma",function()
+local SoundID = 93782728519019
+local Client = false
+local Volume = 10
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button(".....",function()
+local SoundID = 120817494107898
+local Client = false
+local Volume = 10
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+ 
+Android:Button("meme 2 ",function()
+local SoundID = 120011175571061
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("phonk 1  ",function()
+local SoundID = 15689451063
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("quốc ca",function()
+local SoundID = 1845922899
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("bu cu giảng hòa",function()
+local SoundID = 7108789306
+local Client = false
+local Volume = 900
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("meme ",function()
+local SoundID = 16190783444
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("phonk",function()
+local SoundID = 16190782181
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("sadddddd",function()
+local SoundID = 76463442516219
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("nghe vui vui ",function()
+local SoundID = 87209527034670
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+Android:Button("vaicuttt",function()
+local SoundID = 93218265275853
+local Client = false
+local Volume = 20
+local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"}
+game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)])
+end)
+
+
+
+local Android = library:CreateSection("đồ chơi");
+
+Android:Button("triệt tiêu sức mạnh",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Energy"):FireServer(-10)
+end)
+
+Android:Button("nhận lấy sức mạnh ",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Apple") game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Energy"):FireServer(15, "Apple")
+end)
+
+Android:Button("mở hầm chứa loli",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer("Key") game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Door"):FireServer("Basement")
+end)
+
+Android:Button("mở gác mái",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Door"):FireServer("Attic")
+end)
+
+Android:Button("hoàn thành tải",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("LoadingScreen"):FireServer()
+end)
+
+Android:Button("bỏ qua thời sự",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("SkipTele"):FireServer()
+end)
+
+Android:Button("kết bạn với mèo",function()
+game:GetService("ReplicatedStorage").RemoteEvents.Catteryt:FireServer()
+end)
+
+Android:Button("đóng/mở gác mái",function()
+while task.wait() do game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Door"):FireServer("Attic") end
+end)
+
+Android:Button("thắng sự kiện plank",function()
+for i=1, 600 do game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("makePlank"):FireServer(CFrame.new(-69.1567307, 25.2143764, -226.463501, -1, 6.67144491e-08, -7.14325523e-08, -8.74227766e-08, -0.2836622, 0.958924294, 4.37113883e-08, 0.958924294, 0.2836622), workspace:WaitForChild("TheHouse"):WaitForChild("Part")) end
+end)
+
+Android:Button("Flash trong suốt",function()
+while task.wait() do game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeStealth"):FireServer(1) end
+end)
+
+Android:Button("chuyển đổi kích thước (chạy ở sảnh chờ)",function()
+while wait() do game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(nil, false, false) task.wait(0.35) game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer("Chips", true, false) end
+end)
+
+local Android = library:CreateSection("rule 34");
+Android:Button("ko có gì cả  (chạy ở sảnh chờ)",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(nil, false, false)
+end)
+
+Android:Button("thằng đói khát (chạy ở sảnh chờ)",function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer("Chips", true, false)
+end)
+
+local Android = library:CreateSection("thêm nè");
+Android:Button("tấn công server",function()
+for i=1, 3 do while task.wait() do local SoundID = 1107208252 local Client = false local Volume = 666 local Keys = {'trolling57', 'trolling56', 'Cracky4', "TestingKey", "TestKey"} game:GetService("ReplicatedStorage").RemoteEvents.Sounds:FireServer("rbxassetid://" .. tostring(SoundID), Client, Volume, Keys[math.random(1, #Keys)]) end end
+end)
+Android:Button("giết tất cả ",function()
+for index, player in pairs(Players:GetPlayers()) do game:GetService("ReplicatedStorage").RemoteEvents.ToxicDrown:FireServer(1, player) end
+end)
+Android:Button("giết mọi người",function()
+for index, player in pairs(Players:GetPlayers()) do if player ~= lp then game:GetService("ReplicatedStorage").RemoteEvents.ToxicDrown:FireServer(1, player) end end
+end)
+Android:Button("Hồi máu tất cả ",function()
+for index, player in pairs(Players:GetPlayers()) do game:GetService("ReplicatedStorage").RemoteEvents.CurePlayer:FireServer(player) game:GetService("ReplicatedStorage").RemoteEvents.HealPlayer:FireServer(player) end
+end)
+Android:Button("Hồi máu mọi người ",function()
+for index, player in pairs(Players:GetPlayers()) do if player ~= lp then game:GetService("ReplicatedStorage").RemoteEvents.CurePlayer:FireServer(player) game:GetService("ReplicatedStorage").RemoteEvents.HealPlayer:FireServer(player) end end
+end)
+
+Android:Button("giết extra",function()
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local detectionRange = 25
+local function isPlayerInRange(otherPlayer)
+    local otherCharacter = otherPlayer.Character
+    if otherCharacter then
+        local otherRootPart = otherCharacter:FindFirstChild("HumanoidRootPart")
+        if otherRootPart then
+            local distance = (otherRootPart.Position - humanoidRootPart.Position).Magnitude
+            return distance <= detectionRange
+        end
+    end
+    return false
+end
+local function checkNearbyPlayers()
+    for _, otherPlayer in ipairs(game.Players:GetPlayers()) do
+        if otherPlayer ~= player then
+            if isPlayerInRange(otherPlayer) then
+                -- Player detected within range
+                print(otherPlayer.Name .. " is within range!")
+                game:GetService("ReplicatedStorage").RemoteEvents.ToxicDrown:FireServer(1, otherPlayer)
+            end
+        end
+    end
+end
+while wait(1) do
+    checkNearbyPlayers()
+end
+end)
+
+library:Ready();
